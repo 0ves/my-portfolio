@@ -14,8 +14,8 @@ const projects = [
     link: "https://agproduction.vercel.app/", // Replace with actual URL
   },
   {
-    title: "Payment gatway",
-    description: "payment gayway using mern stack",
+    title: "Payment gateway",
+    description: "payment gateyway using mern stack",
     thumbnail: "/pymt.png",
     // 1. ADD THE LINK PROPERTY
     link: "https://pymt.onrender.com", // Replace with actual URL
