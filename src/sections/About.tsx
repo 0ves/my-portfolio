@@ -13,8 +13,8 @@ export default function About() {
         transition={{ duration: 0.6 }}
       >
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-        <p className="text-gray-700 dark:text-gray-300">
-          I'm a frontend developer based in India with a strong interest in clean UI, performance, and solving real-world problems using modern tools.
+        <p className="text-gray-700 ">
+          I am a Full Stack Developer with hands-on experience building scalable web applications using modern techologies based in India with . Skilled in frontend and backend development,  performance optimization and solving real-world problems using modern tools.
         </p>
       </motion.div>
     </section>
