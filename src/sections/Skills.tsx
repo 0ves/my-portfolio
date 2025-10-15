@@ -6,7 +6,7 @@ export default function Skills() {
       <h2 className="text-3xl font-semibold mb-6">Skills</h2>
       <div className="flex flex-wrap gap-4">
         
-        {["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Git"].map((skill) => (
+        {["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Git","Github Actions", "AWS", "devops"].map((skill) => (
           <BackgroundGradient key={skill}>
 
           <span  className="bg-gray-200 dark:bg-gray-300 px-4 py-1.5 rounded-full text-sm font-medium">

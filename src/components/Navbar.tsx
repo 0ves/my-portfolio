@@ -15,30 +15,35 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all ${scrolled ? 'bg-white/80 dark:bg-black/80 backdrop-blur shadow' : ''}`}>
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-     
-      
-        <div>
+   <nav
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+    scrolled ? 'bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-sm' : ''
+  }`}
+>
+  <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+    {/* Logo / Name */}
+    <h1 className="text-xl font-semibold dark:text-white">
+      Oves Nadaf
+    </h1>
 
-        <h1 className="pt-2 ml-8 px-10 text-xl font-bold dark:text-white">Oves Nadaf</h1>
-        </div>
-     
-     
+    {/* Navigation Links + Dark Mode */}
+    <div className="flex items-center gap-6">
+      <ul className="flex gap-6 text-sm font-medium dark:text-white">
+        {['Projects', 'About', 'Skills', 'Contact'].map((item) => (
+          <li key={item}>
+            <a
+              href={`#${item.toLowerCase()}`}
+              className="hover:text-blue-500 transition-colors"
+            >
+              {item}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <DarkModeToggle />
+    </div>
+  </div>
+</nav>
 
-    <div className='flex'>
-        <ul className="flex gap-6 text-sm font-medium dark:text-white pt-3 mr-2">
-          {['Projects','About' , 'Skills', 'Contact'].map((item) => (
-            <li key={item}>
-              <a href={`#${item.toLowerCase()}`} className="hover:underline">
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-         <DarkModeToggle/>
-         </div>
-      </div>
-    </nav>
   );
 }
